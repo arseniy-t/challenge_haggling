@@ -8,7 +8,7 @@ Accept an offer if it costs greater than or equal to the threshold, which is cal
 
 **round** = [0, max_rounds)
 
-**Exception for last round:** if our turn is last accept any offer if it costs more than zero.
+**Exception for last round:** if our turn is second accept any offer if it costs more than zero.
 
 
 ## Strategy of making offers
