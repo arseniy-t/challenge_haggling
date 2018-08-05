@@ -16,3 +16,6 @@ Before all games for each set of object's counts and valuations and each round t
 
 ### Algorithm for calculation of the sequence of offers
 We suppose that an opponent on average has a strategy of offers acceptance: «accept an offer if it costs greater than or equal to the half». We use complete enumeration of the sequences from max_rounds offers for maximization of mathematical expectation of the special game. In this game our agent only makes offers and our opponent only accept or refuse offers. All possible sets of opponent's objects valuation according to the constraints of the generator are assumed equally likely. So this mathematical expectation equals total score in games with each possible opponent's objects valuation divided by the number of these games. When we use complete enumeration we exclude zero and total offers, and exclude offers containing objects which is worth zero for us.
+
+#### Update
+After the deadline I noticed that when I calculate mathematical expectation I suppose that my agent and its opponent may have the same objects valuations, but according to the generator's code it is wrong and valuations are always different.
